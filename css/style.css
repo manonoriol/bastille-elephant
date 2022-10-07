@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'thenightwatch';
+    src: url('/fonts/thenightwatch.ttf');
+}
+
+@font-face {
+    font-family: 'greatwarrior';
+    src: url('/fonts/greatwarrior.ttf');
+}
+
+:root {
+    --red: #D00000;
+    --white: #F5F5F5;
+    --black: #000000%;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing : antialiased;
+    scroll-behavior: smooth;
+
+  }
+
+  section {
+    height: 100vh;
+  }
+
+  .slide-1 {
+    background-image: url('/images/image-1b.jpeg');
+    background-size:105%;
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+  }
+
+  .slide-1 > h1 {
+    margin: 0;
+    font-family: greatwarrior;
+  }
