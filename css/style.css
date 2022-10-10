@@ -8,8 +8,24 @@
     src: url('/fonts/greatwarrior.ttf');
 }
 
+@font-face {
+  font-family: 'playfairdisplay';
+  src: url('/fonts/PlayfairDisplay.ttf');
+}
+
+@font-face {
+  font-family: 'playfairdisplay-italic';
+  src: url('/fonts/PlayfairDisplay-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'pathwaygothic';
+  src: url('/fonts/PathwayGothicOne-Regular.ttf');
+}
+
+
 :root {
-    --red: #F00001;
+    --red: #D00000;
     --white: #F5F5F5;
     --black: #000000%;
   }
@@ -22,8 +38,12 @@
     scroll-behavior: smooth;
 
   }
+  
+  h1 {
+    font-family: thenightwatch;
+  }
 
-  section {
+  .slide {
     height: 100vh;
   }
 
@@ -39,15 +59,14 @@
 
   .titles {
     margin: 0;
-    padding: 1.1em 0 0 3em;
+    padding: 1.1rem 0 0 3rem;
   }
 
   .main-title {
     margin: 0;
-    font-family: thenightwatch;
-    font-size : 3.2em;
+    font-size : 3.2rem;
     color: var(--red);
-    text-shadow: 0 0.0008em black;
+    /* text-shadow: 0 0.0008em black; */
   }
 
   .main-title > h1 {
@@ -57,7 +76,70 @@
 
   .titles > h2 {
     margin: 0;
-    padding-top: -1em;
-    font-size: 2em;
+    padding-top: 0rem;
+    font-size: 2rem;
     color: var(--white); 
   }
+
+  .slide-2 {
+    background-color: var(--red);
+    display: flex;
+  }
+
+  #left-side-s2 {
+    width: 50%;
+    border-right: 0.08rem solid black;
+    padding: 3rem 0 0 5rem;
+  }
+  
+  #left-side-s2 > h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: var(--white);
+    font-family: playfairdisplay;
+    font-weight: lighter;
+  }
+
+  #right-side-s2 {
+    width: 50%;
+  }
+
+#left-side-s2 > h1 {
+  font-size: 41rem;
+    padding: 0px 0 0 20rem;
+    margin: 0;
+    color: white;
+    font-weight: normal;
+}
+
+#right-side-s2 {
+  width: 50%;
+  padding: 3rem 5rem 0 5rem;
+}
+
+.slide2-paragraph {
+  font-size: 1.2rem;
+}
+
+.slide2-bottompage {
+  display: flex;
+}
+
+.slide2-bottompage > h2 {
+  color: var(--white);
+  font-family: pathwaygothic;
+  text-transform: uppercase;
+  font-size: 6rem;
+  padding: 11rem 0 0 0;
+  margin: 0;
+  width: 50%;
+
+}
+
+.slide2-bottompage > p {
+  width: 50%;
+  color: var(--white);
+  font-family: playfairdisplay-italic;
+}
+
