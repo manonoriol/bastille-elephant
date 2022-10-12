@@ -45,6 +45,7 @@
 
   .slide {
     min-height: 100vh;
+    max-height: 100vh;
     }
 
   .slide-1 {
@@ -86,12 +87,15 @@
   .slide-2 {
     background-color: var(--red);
     display: flex;
+    overflow-y: hidden;
   }
 
   #left-side-s2 {
-    width: 50%;
+    min-width: 45%;
     border-right: 0.08rem solid black;
-    padding: 3rem 0 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   
   #left-side-s2 > h2 {
@@ -102,43 +106,40 @@
     font-family: playfairdisplay;
     font-weight: lighter;
   }
-
-  #right-side-s2 {
-    width: 50%;
-    padding: 0 1rem;
-    }
-
+  
   #left-side-s2 > h1 {
     font-size: 41rem;
-      padding: 0px 0 0 20rem;
       margin: 0;
       color: white;
       font-weight: normal;
+      align-self: flex-end;
   }
 
-#right-side-s2 {
-  width: 50%;
-  padding: 0 3rem;
-}
+  #right-side-s2 {
+    width: 50%;
+    padding: 0 12rem;
+  }
 
-.slide2-paragraph {
+.paragraph-s2 {
   font-size: 1.2rem;
-  height: 70%;
+  min-height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.slide2-paragraph p {
-  margin: auto 0;
+.paragraph-s2 p {
+  text-align: start;
+  vertical-align: center;
 }
 
-.slide2-bottompage {
+.bottompage-s2 {
   display: flex;
-  height: 30%;
+  height: 20%;
 }
 
-.slide2-bottompage > h2 {
+.bottompage-s2 > h2 {
   color: var(--white);
   font-family: pathwaygothic;
   text-transform: uppercase;
@@ -146,10 +147,11 @@
   margin: 0;
   width: 50%;
   font-weight: normal;
+  letter-spacing: -0.4rem;
 
 }
 
-.slide2-bottompage > p {
+.bottompage-s2 > p {
   width: 50%;
   color: var(--white);
   font-family: playfairdisplay-italic;
@@ -159,4 +161,72 @@
 background: url('/images/image-2.jpg');
 background-size: cover;
 }
+
+.slide-4 {
+  background-color: white;
+  display: flex;
+}
+
+#left-side-s4 {
+  min-width: 45%;
+  border-right: 0.08rem solid var(--red);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#left-side-s4 > h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  color: var(--black);
+  font-family: playfairdisplay;
+  font-weight: lighter;
+}
+
+#left-side-s4 > h1 {
+  font-size: 35rem;
+  margin: 0;
+  color: var(--black)
+  font-weight: normal;
+  align-self: flex-end;
+}
+
+
+#right-side-s4 {
+width: 50%;
+padding: 0 9rem;
+}
+
+.paragraph-s4 {
+  font-size: 1.2rem;
+  min-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraph-s4 p {
+  text-align: start;
+  vertical-align: center;
+  color: var(--red);
+}
+
+.bottompage-s4 {
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.slide-5 {
+  background: url('/images/image-3.png');
+  background-size: cover;
+  }
 
