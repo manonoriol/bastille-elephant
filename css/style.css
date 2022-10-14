@@ -296,3 +296,24 @@ padding: 0 9rem;
   height: 2rem;
   width: 2rem;
 }
+
+.slide-7 {
+  display: flex;
+  flex-direction: row;
+
+}
+
+#left-side-s7 {
+  width: 50%;
+  background-image: url('/images/image-4.png');
+  background-size: contain;
+  background-position: center;
+}
+
+#right-side-s7 {
+  width: 50%;
+  background-image: url('/images/image-5.png');
+  background-position: center;
+  background-size: contain;
+
+}
