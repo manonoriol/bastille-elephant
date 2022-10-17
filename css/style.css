@@ -19,8 +19,8 @@
 }
 
 @font-face {
-  font-family: 'droid';
-  src: url('/fonts/Droid.otf');
+  font-family: 'glusp';
+  src: url('/fonts/glusp.ttf');
 }
 
 
@@ -49,7 +49,8 @@
     }
 
     .number {
-      font-family: thenightwatch;
+      font-family: glusp;
+      font-size: 25rem;
     }
 
   .slide-1 {
@@ -112,11 +113,10 @@
   }
   
   #left-side-s2 > h1 {
-    font-size: 41rem;
-      margin: 0;
-      color: white;
-      font-weight: normal;
-      align-self: flex-end;
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    align-self: flex-end;
   }
 
   #right-side-s2 {
@@ -189,7 +189,6 @@ background-size: cover;
 }
 
 #left-side-s4 > h1 {
-  font-size: 35rem;
   margin: 0;
   color: var(--black)
   font-weight: normal;
@@ -251,13 +250,13 @@ padding: 0 9rem;
 #left-side-s6 > h2 {
   margin: 0;
   padding: 0;
+  font-family: playfairdisplay;
   font-size: 3rem;
   color: var(--red);
   font-weight: lighter;
 }
 
 #left-side-s6 > h1 {
-  font-size: 35rem;
   margin: 0;
   color: var(--red);
   font-weight: normal;
@@ -353,13 +352,13 @@ padding: 0 9rem;
 #left-side-s8 > h2 {
   margin: 0;
   padding: 0;
+  font-family: playfairdisplay;
   font-size: 3rem;
   color: var(--white);
   font-weight: lighter;
 }
 
 #left-side-s8 > h1 {
-  font-size: 35rem;
   margin: 0;
   color: var(--white);
   font-weight: normal;
@@ -395,4 +394,53 @@ padding: 0 9rem;
   #icon-8 {
     height: 2rem;
     width: 2rem;
+  }
+
+  .slide-9 {
+    display: flex;
+    flex-direction: row;
+  
+  }
+  
+  #left-side-s9 {
+    width: 45%;
+    background-image: url('/images/image-6.png');
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: 100% 41%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #right-side-s9 {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .upper-right-side-s9 {
+    height: 45%;
+    display: flex;
+  }
+
+  .bottom-right-side-s9 {
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-right-side-s9 > p {
+    padding-right: 9rem;
+    width: 25%;
+    align-self: flex-end;
+    font-family: playfairdisplay-italic;
+  }
+
+  .img2-s9 {
+    background-image: url(/images/image-8.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80%;
+    width: 100%;
   }
