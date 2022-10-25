@@ -125,7 +125,8 @@
   }
 
 .paragraph-s2 {
-  font-size: 1.2rem;
+  font-family: playfairdisplay;
+  font-size: 1rem;
   min-height: 80%;
   display: flex;
   flex-direction: column;
@@ -199,10 +200,14 @@ background-size: cover;
 #right-side-s4 {
 width: 50%;
 padding: 0 9rem;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
 }
 
 .paragraph-s4 {
-  font-size: 1.2rem;
+  font-family: playfairdisplay;
+  font-size: 1rem;
   min-height: 90%;
   display: flex;
   flex-direction: column;
@@ -267,10 +272,14 @@ padding: 0 9rem;
 #right-side-s6 {
 width: 50%;
 padding: 0 9rem;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
 }
 
 .paragraph-s6 {
-  font-size: 1.2rem;
+  font-family: playfairdisplay;
+  font-size: 1rem;
   min-height: 90%;
   display: flex;
   flex-direction: column;
@@ -368,15 +377,19 @@ padding: 0 9rem;
 #right-side-s8 {
   width: 50%;
   padding: 0 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   }
 
   .paragraph-s8 {
-    font-size: 1.2rem;
+    font-family: playfairdisplay;
+    font-size: 1rem;
     min-height: 80%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content:center;
   }
   
   .paragraph-s8 p {
@@ -510,10 +523,14 @@ padding: 0 9rem;
 #right-side-s10 {
   width: 60%;
   padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   }
 
   .paragraph-s10 {
-  font-size: 1.1rem;
+  font-family: playfairdisplay;
+  font-size: 1rem;
   min-height: 80%;
   display: flex;
   flex-direction: column;
