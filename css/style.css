@@ -30,13 +30,20 @@
     --black: #000000;
   }
 
-  html,
   body {
     margin: 0;
     padding: 0;
     -webkit-font-smoothing : antialiased;
-    scroll-behavior: smooth;
+    overscroll-behavior: none;
+    height: 100vh;
+  }
 
+  .container {
+    overscroll-behavior: none;
+    width: 600%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
   }
   
   h1 {
@@ -46,6 +53,7 @@
   .slide {
     min-height: 100vh;
     max-height: 100vh;
+    min-width: 100vw;
     }
 
     .number {
