@@ -36,6 +36,7 @@
     -webkit-font-smoothing : antialiased;
     overscroll-behavior: none;
     height: 100vh;
+    scroll-behavior: smooth;
   }
 
   .container {
