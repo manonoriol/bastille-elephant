@@ -1,28 +1,27 @@
 @font-face {
     font-family: 'thenightwatch';
-    src: url('../fonts/thenightwatch.ttf');
+    src: url('https://github.com/manonoriol/bastille-elephant/tree/master/fonts/thenightwatch.ttf');
 }
 
 @font-face {
   font-family: 'playfairdisplay';
-  src: url('fonts/PlayfairDisplay.ttf');
+  src: url('https://github.com/manonoriol/bastille-elephant/tree/master/fonts/PlayfairDisplay.ttf');
 }
 
 @font-face {
   font-family: 'playfairdisplay-italic';
-  src: url('fonts/PlayfairDisplay-Italic.ttf');
+  src: url('https://github.com/manonoriol/bastille-elephant/tree/master/fonts/PlayfairDisplay-Italic.ttf');
 }
 
 @font-face {
   font-family: 'pathwaygothic';
-  src: url('fonts/PathwayGothicOne-Regular.ttf');
+  src: url('https://github.com/manonoriol/bastille-elephant/tree/master/fonts/PathwayGothicOne-Regular.ttf');
 }
 
 @font-face {
   font-family: 'glusp';
-  src: url('fonts/glusp.ttf');
+  src: url('https://github.com/manonoriol/bastille-elephant/tree/master/fonts/glusp.ttf');
 }
-
 
 :root {
     --red: #D00000;
