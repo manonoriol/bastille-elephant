@@ -1,26 +1,26 @@
 @font-face {
     font-family: 'thenightwatch';
-    src: url('https://github.com/manonoriol/bastille-elephant/tree/master/fonts/thenightwatch.ttf');
+    src: url('../fonts/thenightwatch.ttf');
 }
 
 @font-face {
   font-family: 'playfairdisplay';
-  src: url('https://github.com/manonoriol/bastille-elephant/tree/master/fonts/PlayfairDisplay.ttf');
+  src: url('../fonts/PlayfairDisplay.ttf');
 }
 
 @font-face {
   font-family: 'playfairdisplay-italic';
-  src: url('https://github.com/manonoriol/bastille-elephant/tree/master/fonts/PlayfairDisplay-Italic.ttf');
+  src: url('../fonts/PlayfairDisplay-Italic.ttf');
 }
 
 @font-face {
   font-family: 'pathwaygothic';
-  src: url('https://github.com/manonoriol/bastille-elephant/tree/master/fonts/PathwayGothicOne-Regular.ttf');
+  src: url('../fonts/PathwayGothicOne-Regular.ttf');
 }
 
 @font-face {
   font-family: 'glusp';
-  src: url('https://github.com/manonoriol/bastille-elephant/tree/master/fonts/glusp.ttf');
+  src: url('../fonts/glusp.ttf');
 }
 
 :root {
@@ -242,7 +242,7 @@ justify-content: space-evenly;
 }
 
 .slide-5 {
-  background: url('images/image-3.png');
+  background: url('../images/image-3.png');
   background-size: cover;
   }
 
@@ -321,7 +321,7 @@ justify-content: space-evenly;
 
 #left-side-s7 {
   width: 45%;
-  background-image: url("images/image-4.png");
+  background-image: url('../images/image-4.png');
   background-size:100%;
   background-repeat: no-repeat;
   background-position: 0% 56%;
@@ -338,7 +338,7 @@ justify-content: space-evenly;
 
 #right-side-s7 {
   width: 55%;
-  background-image: url("images/image-5.png");
+  background-image: url('../images/image-5.png');
   background-position: center;
   background-size: 108%;
   background-repeat: no-repeat;
@@ -426,7 +426,7 @@ justify-content: space-evenly;
   #left-side-s9 {
     z-index: 0;
     width: 45%;
-    background-image: url("images/image-6.png");
+    background-image: url('../images/image-6.png');
     background-size:93%;
     background-repeat: no-repeat;
     background-position: 0 34%;
@@ -445,7 +445,7 @@ justify-content: space-evenly;
   }
 
   .middle-img-s9 {
-    background-image: url("images/image-7.png");
+    background-image: url('../images/image-7.png');
     background-size: cover;
     height: 12rem;
     width: 20rem;
@@ -491,7 +491,7 @@ justify-content: space-evenly;
   }
 
   .img2-s9 {
-    background-image: url("images/image-8.png");
+    background-image: url('../images/image-8.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -562,7 +562,7 @@ justify-content: space-evenly;
 
 
 .slide-11 {
-  background: url("images/image-9.png");
+  background: url('../images/image-9.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 0% 99%;
@@ -603,7 +603,7 @@ justify-content: space-evenly;
   }
 
   .s12-img {
-    background-image: url("images/image-10.png");
+    background-image: url('../images/image-10.png');
     background-size: 100%;
     width: 90%;
     height: 90%;
