@@ -76,7 +76,6 @@
 
   .slide-1 {
     height: 100vh;
-    background-color: #000000;
     background: linear-gradient(
       rgba(0, 0, 0, 0.07), 
       rgba(0, 0, 0, 0.07)
@@ -133,7 +132,7 @@
   #left-side-s2 > h2 {
     margin: 0;
     padding-left: 5%;
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--white);
     font-family: playfairdisplay;
     font-weight: lighter;
@@ -210,7 +209,7 @@ background-size: cover;
 #left-side-s4 > h2 {
   margin: 0;
   padding-left: 5%;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--black);
   font-family: playfairdisplay;
   font-weight: lighter;
@@ -283,7 +282,7 @@ justify-content: space-evenly;
   margin: 0;
   padding-left: 5%;
   font-family: playfairdisplay;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--red);
   font-weight: lighter;
 }
@@ -389,7 +388,7 @@ justify-content: space-evenly;
   margin: 0;
   padding-left: 5%;
   font-family: playfairdisplay;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--white);
   font-weight: lighter;
 }
@@ -535,7 +534,7 @@ justify-content: space-evenly;
     margin: 0;
     padding-left: 5%;
     font-family: playfairdisplay;
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--red);
     font-weight: lighter;
   }
@@ -546,8 +545,7 @@ justify-content: space-evenly;
     font-weight: normal;
     align-self: flex-end;
   }
-  
-#right-side-s10 {
+  #right-side-s10 {
   width: 60%;
   padding: 0 3rem;
   display: flex;
