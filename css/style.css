@@ -545,8 +545,7 @@ justify-content: space-evenly;
     font-weight: normal;
     align-self: flex-end;
   }
-  
-#right-side-s10 {
+  #right-side-s10 {
   width: 60%;
   padding: 0 3rem;
   display: flex;
