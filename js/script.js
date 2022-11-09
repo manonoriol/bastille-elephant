@@ -1,5 +1,3 @@
-// gsap slide-1 mask animation
-
 var tl1 = new TimelineMax;
 
 tl1.to('.mask', 2.5, {y:'-100vh', ease: Power2.easeOut}, 0.5)
