@@ -85,6 +85,13 @@
     background-position: 0% 40%;
   }
 
+  .mask {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+  }
+
   .titles {
     margin: 0;
     padding: 1.1rem 0 0 3rem;
