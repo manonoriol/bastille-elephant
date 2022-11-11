@@ -1,8 +1,3 @@
-var tl1 = new TimelineMax;
-
-tl1.to('.mask', 2.5, {y:'-100vh', ease: Power2.easeOut}, 0.5)
-
-
 // gsap switch div horizontal
 
 gsap.registerPlugin(ScrollTrigger);
@@ -35,4 +30,14 @@ function transformScroll(event) {
 
 var element = document.scrollingElement || document.documentElement;
 element.addEventListener('wheel', transformScroll);
+
+// go back btn
+
+// const btn = document.querySelector('.back-btn');
+
+// function goBack() {
+//   TweenLite.to(window, 1, {scrollTo:{y:0}, ease:Power2.easeInOut})
+// }
+
+// btn.addEventListener("click", console.log("poopz"));
 
