@@ -25,7 +25,6 @@ function transformScroll(event) {
   }
 
   event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
-  event.preventDefault();
 }
 
 var element = document.scrollingElement || document.documentElement;
@@ -33,11 +32,13 @@ element.addEventListener('wheel', transformScroll);
 
 // go back btn
 
-// const btn = document.querySelector('.back-btn');
+window.onload=function(){
+  const btn = document.getElementById('icon-s12');
 
-// function goBack() {
-//   TweenLite.to(window, 1, {scrollTo:{y:0}, ease:Power2.easeInOut})
-// }
-
-// btn.addEventListener("click", console.log("poopz"));
+  btn.addEventListener('click', goBack);
+  
+  function goBack() {
+    gsap.to(window, {duration: 3, scrollTo: {x: "min"}, ease: "power3"});
+  };
+}
 
