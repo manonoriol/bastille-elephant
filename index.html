@@ -8,11 +8,11 @@
     <title>The Elephant of the Bastille</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="wrapper">
         <div class="slide slide-1 slide-1-background">
             <div class="mask"></div>
                 <div class="titles">
@@ -22,7 +22,7 @@
                         <h1>of the</h1>
                         <h1>Bastille</h1>
                     </div>
-                    <h2>A story from the lost Paris.</h2>
+                    <h2 class="sub-title">A story from the lost Paris.</h2>
                 </div>
         </div>
         <div class="slide slide-2">
@@ -148,10 +148,5 @@
             </div>
         </div>
     </div>
-    <script>
-        var tl1 = new TimelineMax;
-
-        tl1.to('.mask', 2.8, {y:'-100vh', ease: Power2.easeInOut}, 1.4)
-    </script>
 </body>
 </html>
