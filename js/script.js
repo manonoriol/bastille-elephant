@@ -12,24 +12,26 @@ let sections = gsap.utils.toArray(".slide");
 
 gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
-  ease: "none",
+  ease: false,
   scrollTrigger: {
     trigger: ".container",
     pin: true,
     scrub: 1,
-    snap: 1 / (sections.length - 1),
+    // snap: 1 / (sections.length - 1),
     end: () => "+=" + document.querySelector(".container").offsetWidth
   }
 });
 
 // go back btn
 
+gsap.registerPlugin(ScrollToPlugin);
+
 const btn = document.getElementById('icon-s12');
 
 btn.addEventListener('click', goBack);
 
 function goBack() {
-gsap.to(Window, {duration: 3, scrollTo: {x: "min"}, ease: "power3"});
+gsap.to(window, {duration: 3, scrollTo: {x: "min"}, ease: "power3"});
 console.log("clicked");
 };
 
