@@ -24,16 +24,25 @@ gsap.to(sections, {
 
 // go back btn
 
-gsap.registerPlugin(ScrollToPlugin);
+// gsap.registerPlugin(ScrollToPlugin);
+
+// const btn = document.getElementById('icon-s12');
+
+// btn.addEventListener('click', goBack);
+
+// function goBack() {
+// gsap.to(window, {duration: 3, scrollTo: ".slide-1", ease: "power3"});
+// console.log("clicked");
+// };
 
 const btn = document.getElementById('icon-s12');
 
-btn.addEventListener('click', goBack);
-
-function goBack() {
-gsap.to(window, {duration: 3, scrollTo: {x: "min"}, ease: "power3"});
-console.log("clicked");
-};
+btn.addEventListener("click", () => {
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
+});
 
 //title animation gsap
 
