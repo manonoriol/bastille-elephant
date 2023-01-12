@@ -1,6 +1,6 @@
 //slide 1 black mask animation
 
-var tl1 = new TimelineMax;
+let tl1 = new TimelineMax;
 
 tl1.to('.mask', 2.8, {y:'-100vh', ease: Power2.easeInOut}, 2.5)
 
@@ -10,15 +10,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray(".slide");
 
-gsap.to(sections, {
+let scrollTween = gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
-  ease: false,
+  ease: "none", // <-- IMPORTANT!
   scrollTrigger: {
     trigger: ".container",
+    start: "top top",
+    end: "+=3000",
     pin: true,
-    scrub: 1,
-    // snap: 1 / (sections.length - 1),
-    end: () => "+=" + document.querySelector(".container").offsetWidth
+    scrub: 0.5
   }
 });
 
@@ -31,7 +31,7 @@ gsap.to(sections, {
 // btn.addEventListener('click', goBack);
 
 // function goBack() {
-// gsap.to(window, {duration: 3, scrollTo: ".slide-1", ease: "power3"});
+// gsap.to(window, {duration: 3, scrollTo: 200, ease: "power3"});
 // console.log("clicked");
 // };
 
@@ -44,7 +44,7 @@ btn.addEventListener("click", () => {
   });
 });
 
-//title animation gsap
+//main title animation gsap
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,3 +78,45 @@ function transformScroll(event) {
 
 var element = document.scrollingElement || document.documentElement;
 element.addEventListener('wheel', transformScroll);
+
+// section-titles animation
+
+gsap.registerPlugin(ScrollTrigger);
+
+const titles = gsap.utils.toArray(".section-title");
+
+titles.forEach((title, i) => {
+  gsap.from(title, {
+    y: 10,
+    opacity: 0,
+    duration: 1,
+    ease: "power1",
+    scrollTrigger: {
+      trigger: "." + title.parentElement.parentElement.className.slice(6),
+      containerAnimation: scrollTween,
+      start: "left center",
+      toggleActions: "play none none pause"
+    }
+  });
+});
+
+// paragraphs animation
+
+gsap.registerPlugin(ScrollTrigger);
+
+const paragraphs = gsap.utils.toArray(".paragraph");
+
+paragraphs.forEach((para, i) => {
+  gsap.from(para, {
+    y: 5,
+    opacity: 0,
+    duration: 2,
+    ease: "power1",
+    scrollTrigger: {
+      trigger: "." + para.parentElement.parentElement.className.slice(6),
+      containerAnimation: scrollTween,
+      start: "left center",
+      toggleActions: "play none none pause"
+    }
+  });
+});
