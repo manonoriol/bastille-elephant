@@ -18,7 +18,8 @@ let scrollTween = gsap.to(sections, {
     start: "top top",
     end: "+=3000",
     pin: true,
-    scrub: 0.5
+    scrub: 1.5
+
   }
 });
 
@@ -120,3 +121,4 @@ paragraphs.forEach((para, i) => {
     }
   });
 });
+
