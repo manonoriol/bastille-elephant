@@ -195,7 +195,7 @@ display: none;
 .bottompage-s2 > p {
   width: 50%;
   color: var(--white);
-  font-family: playfairdisplay-italic;
+  font-family: monospace;
 }
 
 .slide-3 {
@@ -271,12 +271,49 @@ justify-content: space-evenly;
 
 .slide-5 {
   background: url('../images/image-3.png');
-  background-size: cover;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 0% 40%;
+  display: flex;
+  justify-content: flex-end;
+  }
+
+  .s5-right-part {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .s5-text {
+    width: 15%;
+    height: 100%;
+    border: solid 1px blue;
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .s5-text > ul {
+    list-style-type: none;
+    font-family: glusp;
+    font-size: 11rem;
+    line-height: 9rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 1000;
+    font-family: 'thenightwatch';
+    font-size: 11rem;
+  }
+
+  .s5-text > p {
+    font-family: monospace;
   }
 
 .slide-6 {
   background-color: black;
-  display: flex;
+  display: flex;;
 
 }
 
@@ -358,7 +395,7 @@ justify-content: space-evenly;
 }
 
 .left-side-s7 > p {
-  font-family: 'playfairdisplay-italic';
+  font-family: monospace;
   color: var(--white);
   width: 30%;
   padding: 0.5rem 0.5rem;
@@ -376,7 +413,7 @@ justify-content: space-evenly;
 }
 
 .right-side-s7 > p {
-  font-family: 'playfairdisplay-italic';
+  font-family: monospace;
   width: 30%;
   padding: 0.5rem 0;
 }
@@ -482,7 +519,7 @@ justify-content: space-evenly;
     .s9-text-2 {
     padding-left: 1%;
     width: 18%;
-    font-family: playfairdisplay-italic;
+    font-family: monospace;
     align-self: flex-start;
   }
 
@@ -508,14 +545,14 @@ justify-content: space-evenly;
   .s9-text-1 {
     width: 25%;
     align-self: center;
-    font-family: playfairdisplay-italic;
+    font-family: monospace;
   }
 
   .s9-text-3 {
     padding-right: 15%;
     width: 25%;
     align-self: flex-end;
-    font-family: playfairdisplay-italic;
+    font-family: monospace;
   }
 
   .img2-s9 {
@@ -634,7 +671,8 @@ blockquote {
   .s12-text {
     color: var(--white);
     width: 55%;
-    font-family: playfairdisplay-italic;
+    font-family: monospace;
+    padding-top: 1%;
   }
 
   .s12-img {
@@ -654,3 +692,4 @@ blockquote {
   #icon-s12:hover {
     transform: scale(1.1);
     transition: all .4s ease;
+  }
