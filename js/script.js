@@ -122,3 +122,22 @@ paragraphs.forEach((para, i) => {
   });
 });
 
+// paris animation
+
+gsap.registerPlugin(ScrollTrigger);
+
+const paris = new SplitType('#paris');
+
+gsap.to('.char', {
+  y: 0,
+  stagger: 0.2,
+  delay: 0.2,
+  duration: .4,
+  ease: "power2",
+  scrollTrigger: {
+    trigger:'.slide-2',
+    containerAnimation: scrollTween,
+    start: "left center",
+    toggleActions: "play none none pause"
+  }
+});
