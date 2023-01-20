@@ -18,6 +18,7 @@ let scrollTween = gsap.to(sections, {
     start: "top top",
     end: "+=3000",
     pin: true,
+    normalizeScroll: true,
     scrub: 1.5
 
   }
@@ -136,6 +137,22 @@ gsap.to('.char', {
   ease: "power2",
   scrollTrigger: {
     trigger:'.slide-2',
+    containerAnimation: scrollTween,
+    start: "left center",
+    toggleActions: "play none none pause"
+  }
+});
+
+// slide-5 animation
+
+gsap.to('.date', {
+  y: 0,
+  stagger: 0.4,
+  delay: 0.2,
+  duration: .4,
+  ease: "power2",
+  scrollTrigger: {
+    trigger:'.slide-5',
     containerAnimation: scrollTween,
     start: "left center",
     toggleActions: "play none none pause"
