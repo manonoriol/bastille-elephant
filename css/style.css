@@ -23,6 +23,11 @@
   src: url('../fonts/glusp.ttf');
 }
 
+@font-face {
+  font-family: 'tempelgrotesk';
+  src: url('../fonts/tempelgrotesk-wide.otf');
+}
+
 /* @keyframes apparition {
   100%{
     opacity: 1;
@@ -62,7 +67,10 @@ display: none;
   }
   
   h1 {
-    font-family: thenightwatch;
+    font-family: tempelgrotesk;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    font-size: 8vh;
   }
 
   .slide {
@@ -287,26 +295,28 @@ justify-content: space-evenly;
   }
 
   .s5-text {
-    width: 15%;
+    width: 5%;
     height: 100%;
-    border: solid 1px blue;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   
   }
 
   .s5-text > ul {
     list-style-type: none;
-    font-family: glusp;
-    font-size: 11rem;
-    line-height: 9rem;
+    line-height: 7.5rem;
     padding: 0;
     margin: 0;
     font-weight: 1000;
     font-family: 'thenightwatch';
-    font-size: 11rem;
+    font-size: 9rem;
+    justify-content: center;
   }
 
+  #one {
+    padding-left: 50%
+  }
   .s5-text > p {
     font-family: monospace;
   }
@@ -501,11 +511,11 @@ justify-content: space-evenly;
 
   .middle-part-s9 {
     z-index: 1;
-    margin: 2% 0 0 39%;
+    margin: 2% 0 0 35%;
     position: absolute;
     display: flex;
     flex-direction: row;
-    width: 33%;
+    width: 32%;
     justify-content: space-around;
   }
 
