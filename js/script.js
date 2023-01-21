@@ -8,6 +8,8 @@ tl1.to('.mask', 2.8, {y:'-100vh', ease: Power2.easeInOut}, 2.5)
 
 gsap.registerPlugin(ScrollTrigger);
 
+ScrollTrigger.normalizeScroll(true);
+
 let sections = gsap.utils.toArray(".slide");
 
 let scrollTween = gsap.to(sections, {
@@ -18,9 +20,7 @@ let scrollTween = gsap.to(sections, {
     start: "top top",
     end: "+=3000",
     pin: true,
-    normalizeScroll: true,
     scrub: 1.5
-
   }
 });
 
