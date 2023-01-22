@@ -8,7 +8,7 @@ tl1.to('.mask', 2.8, {y:'-100vh', ease: Power2.easeInOut}, 2.5)
 
 gsap.registerPlugin(ScrollTrigger);
 
-ScrollTrigger.normalizeScroll(true);
+// ScrollTrigger.normalizeScroll(true);
 
 let sections = gsap.utils.toArray(".slide");
 
