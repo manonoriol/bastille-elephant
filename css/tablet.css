@@ -257,7 +257,6 @@ background: url('../images/image-3.png');
 background-size: 70%;
 background-repeat: no-repeat;
 background-position: 30% 25%;
-border: 1px solid green;
 display: flex;
 }
 
@@ -266,7 +265,6 @@ display: flex;
   height: 50%;
   display: flex;
   justify-content: flex-start;
-  border: 1px solid pink;
   align-self: self-end;
   }
 
@@ -276,13 +274,14 @@ display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  padding-left: 10%;
 }
 
 .s5-text > ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  line-height: 14.5vmin;
+  line-height: 4.5vmin;
   padding: 0;
   margin: 0;
   font-weight: 1000;
@@ -291,11 +290,9 @@ display: flex;
   justify-content: center;
 }
 
-#one {
-  padding-left: 50%
-}
 .s5-text > p {
   font-family: monospace;
+  padding-left: 1%;
 }
 
 .date {
@@ -362,16 +359,16 @@ transform: rotate(90deg);
 
 .slide-7 {
 display: flex;
-flex-direction: row;
+flex-direction: column;
+background-color: #000000;
 
 }
 
 .left-side-s7 {
-width: 45%;
+height: 50%;
 background-image: url('../images/image-4.png');
-background-size:100%;
+background-size: 53%;
 background-repeat: no-repeat;
-background-position: 0% 56%;
 display: flex;
 justify-content: flex-start;
 }
@@ -380,14 +377,14 @@ justify-content: flex-start;
 font-family: monospace;
 color: var(--white);
 width: 30%;
-padding: 0.5rem 0.5rem;
+padding: 1% 0 0 1%;
 }
 
 .right-side-s7 {
-width: 55%;
+height: 50%;
 background-image: url('../images/image-5.png');
 background-position: center;
-background-size: 108%;
+background-size: 68%;
 background-repeat: no-repeat;
 background-position: 101% 35%;
 display: flex;
@@ -397,7 +394,6 @@ justify-content: flex-end;
 .right-side-s7 > p {
 font-family: monospace;
 width: 30%;
-padding: 0.5rem 0;
 }
 
 .slide-8 {
@@ -602,36 +598,36 @@ background-position: 55% 45%;
 .slide-12 {
   background-color: var(--black);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .s12-block1 {
-  width: 30%;
+  height: 20%;
   display: flex;
-  justify-content: center;
-  padding-top: 2%;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .s12-block2 {
-  width: 60%;
+  height: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .s12-block3 {
-  width: 10%;
+  height: 20%;
   display: flex;
-  justify-content: center;
-  align-items: self-end;
-  padding-bottom: 2%;
+  justify-content: end;
+  align-items: end;
+  padding: 0 5% 5% 0;
 }
 
 .s12-text {
   color: var(--white);
   width: 55%;
   font-family: monospace;
-  padding-top: 1%;
+  padding-left: 5%;
 }
 
 .s12-img {
