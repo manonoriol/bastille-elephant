@@ -646,3 +646,7 @@ background-position: 0% 99%;
   transform: scale(1.1);
   transition: all .4s ease;
 }
+
+#icon-s12-up {
+  display: none;
+}
