@@ -42,9 +42,6 @@ body {
   -webkit-font-smoothing : antialiased;
 }
 
-/* .container {
- 
-} */
 
 h1 {
   font-family: tempelgrotesk;
@@ -73,13 +70,6 @@ h1 {
   background-repeat: no-repeat;
   background-position: 20% 40%;
 }
-
-/* .mask {
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  position: absolute;
-} */
 
 .titles {
   margin: 0;
@@ -325,7 +315,6 @@ color: var(--red);
 font-weight: normal;
 align-self: flex-end;
 }
-
 
 .right-side-s6 {
 height: 60%;
