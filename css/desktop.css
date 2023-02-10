@@ -1,5 +1,43 @@
 @media only screen and (min-width: 1200px) {
 
+  /* Base styles */
+
+@font-face {
+  font-family: 'thenightwatch';
+  src: url('../fonts/thenightwatch.ttf');
+}
+
+@font-face {
+font-family: 'playfairdisplay';
+src: url('../fonts/PlayfairDisplay.ttf');
+}
+
+@font-face {
+font-family: 'playfairdisplay-italic';
+src: url('../fonts/PlayfairDisplay-Italic.ttf');
+}
+
+@font-face {
+font-family: 'pathwaygothic';
+src: url('../fonts/PathwayGothicOne-Regular.ttf');
+}
+
+@font-face {
+font-family: 'glusp';
+src: url('../fonts/glusp.ttf');
+}
+
+@font-face {
+font-family: 'tempelgrotesk';
+src: url('../fonts/tempelgrotesk-wide.otf');
+}
+
+:root {
+  --red: #D00000;
+  --white: #F5F5F5;
+  --black: #000000;
+}
+
     body {
         margin: 0;
         padding: 0;
@@ -610,6 +648,11 @@
         transform: scale(1.1);
         transition: all .4s ease;
       }
+
+      #icon-s12-up {
+        display: none;
+      }
+      
       
 
 
