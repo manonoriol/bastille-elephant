@@ -1,44 +1,44 @@
-// insert css depending on screen size
+// // insert css depending on screen size
 
-let screenWidth = window.innerWidth;
+// let screenWidth = window.innerWidth;
 
-function addStylesheet1() {
-  let newLink = document.createElement("link");
-  newLink.rel = "stylesheet";
-  newLink.href = "css/mobile.css";
-  document.head.appendChild(newLink);
-}
+// function addStylesheet1() {
+//   let newLink = document.createElement("link");
+//   newLink.rel = "stylesheet";
+//   newLink.href = "css/mobile.css";
+//   document.head.appendChild(newLink);
+// }
 
-function addStylesheet2() {
-  let newLink2 = document.createElement("link");
-  newLink2.rel = "stylesheet";
-  newLink2.href = "css/tablet.css";
-  document.head.appendChild(newLink2);
-}
+// function addStylesheet2() {
+//   let newLink2 = document.createElement("link");
+//   newLink2.rel = "stylesheet";
+//   newLink2.href = "css/tablet.css";
+//   document.head.appendChild(newLink2);
+// }
 
-function addStylesheet3() {
-  let newLink3 = document.createElement("link");
-  newLink3.rel = "stylesheet";
-  newLink3.href = "css/desktop.css";
-  document.head.appendChild(newLink3);
-}
+// function addStylesheet3() {
+//   let newLink3 = document.createElement("link");
+//   newLink3.rel = "stylesheet";
+//   newLink3.href = "css/desktop.css";
+//   document.head.appendChild(newLink3);
+// }
 
-if (screenWidth < 768) {
-  addStylesheet1();
-} else if (screenWidth >= 768 && screenWidth < 1099) {
-  addStylesheet2();
-} else {
-  addStylesheet3();
-}
+// if (screenWidth < 768) {
+//   addStylesheet1();
+// } else if (screenWidth >= 768 && screenWidth < 1099) {
+//   addStylesheet2();
+// } else {
+//   addStylesheet3();
+// }
 
-// desabling breakpoints when window is resized
+// // desabling breakpoints when window is resized
 
-window.addEventListener("resize", function() {
-  let newScreenWidth = window.innerWidth;
-  if (newScreenWidth !== screenWidth) {
-    // Do nothing
-  }
-});
+// window.addEventListener("resize", function() {
+//   let newScreenWidth = window.innerWidth;
+//   if (newScreenWidth !== screenWidth) {
+//     // Do nothing
+//   }
+// });
 
 
 const mqDesktops = window.matchMedia("(min-width: 1100px)");

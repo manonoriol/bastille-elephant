@@ -385,6 +385,60 @@ font-family: monospace;
 width: 30%;
 }
 
+.slide-8 {
+  background-color: var(--red);
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .left-side-s8 {
+  border-bottom: 0.08rem solid var(--black);
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+  
+  #demolition {
+  color: var(--white);
+  }
+  
+  .left-side-s8 > h1 {
+  margin: 0;
+  color: var(--white);
+  font-weight: normal;
+  align-self: flex-end;
+  }
+  
+  .right-side-s8 {
+  height: 60%;
+  padding: 0 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  }
+  
+  .paragraph-s8 {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: center;
+  }
+  
+.bottompage-s8 {
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  }
+  
+#icon-8 {
+  height: 4vmin;
+  width: 4vmin;
+  transform: rotate(90deg);
+}
+
 .slide-9 {
   display: flex;
   flex-direction: column;
@@ -566,15 +620,6 @@ background-position: 55% 45%;
 
 #icon-s12 {
   display: none;
-  height: 5vmin;
-  width: 5vmin;
-  cursor: pointer;
-}
-
-#icon-s12:hover {
-  display: none;
-  transform: scale(1.1);
-  transition: all .4s ease;
 }
 
 #icon-s12-up {
@@ -583,7 +628,7 @@ background-position: 55% 45%;
   cursor: pointer;
 }
 
-#icon-s12:hover {
+#icon-s12-up:hover {
   transform: scale(1.1);
   transition: all .4s ease;
 }
