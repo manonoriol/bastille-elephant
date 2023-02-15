@@ -1,5 +1,3 @@
-@media only screen and (min-width: 1200px) {
-
   /* Base styles */
 
   @font-face {
@@ -454,7 +452,6 @@
   .slide-9 {
     display: flex;
     flex-direction: row;
-
   }
     
   .left-side-s9 {
@@ -652,6 +649,4 @@
   #icon-s12-up {
     display: none;
   }
-
-}
     
