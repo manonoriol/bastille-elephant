@@ -67,7 +67,7 @@
 
   .number {
     font-family: glusp;
-    font-size: 40vmin;
+    font-size: 35vmin;
     padding-right: 5%;
   }
     
@@ -452,15 +452,16 @@
   .slide-9 {
     display: flex;
     flex-direction: row;
+
   }
     
   .left-side-s9 {
     z-index: 0;
     width: 45%;
     background-image: url('../images/image-6.png');
-    background-size: 93%;
+    background-size: 80vmin;
     background-repeat: no-repeat;
-    background-position: 0 34%;
+    background-position: 0 -2vmin;
     display: flex;
     justify-content: flex-start;
   }
