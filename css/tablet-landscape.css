@@ -451,17 +451,18 @@ background-color: #000000;
     z-index: 0;
     width: 45%;
     background-image: url('../images/image-6.png');
-    background-size: 93%;
+    background-size: 137%;
     background-repeat: no-repeat;
-    background-position: 0 34%;
+    background-position: -6vmin -5vmin;
     display: flex;
     justify-content: flex-start;
     height: auto;
+    border: 0;
   }
     
   .middle-part-s9 {
     z-index: 1;
-    margin: 12% 0 0 35%;
+    margin: 12% 0 0 38%;
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -472,8 +473,8 @@ background-color: #000000;
   .middle-img-s9 {
     background-image: url('../images/image-7.png');
     background-size: cover;
-    height: 23vmin;
-    width: 47vmin;
+    height: 20vmin;
+    width: 40vmin;
   }
 
     .s9-text-2 {
@@ -521,8 +522,8 @@ background-color: #000000;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 80%;
-    width: 100%;
+    height: 70%;
+    width: 95%;
   }
 
 .slide-10 {
@@ -583,9 +584,9 @@ align-items: center;
 
 .slide-11 {
 background: url('../images/image-9.png');
-background-size: 230%;
+background-size: 118%;
 background-repeat: no-repeat;
-background-position: 55% 45%;
+background-position: 60%;
 }
 
 .slide-12 {
@@ -595,21 +596,21 @@ background-position: 55% 45%;
 }
 
 .s12-block1 {
-  height: 20%;
+  height: 10%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 .s12-block2 {
-  height: 60%;
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .s12-block3 {
-  height: 20%;
+  height: 10%;
   display: flex;
   justify-content: end;
   align-items: end;
@@ -625,9 +626,8 @@ background-position: 55% 45%;
 
 .s12-img {
   background-image: url('../images/image-10.png');
-  background-size: 100%;
-  width: 90%;
-  height: 90%;
+  background-size: 82%;
+  height: 100%;
   background-repeat: no-repeat;
 }
 
