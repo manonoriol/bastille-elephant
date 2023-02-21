@@ -1,47 +1,6 @@
-// // insert css depending on screen size
-
-// let screenWidth = window.innerWidth;
-
-// function addStylesheet1() {
-//   let newLink = document.createElement("link");
-//   newLink.rel = "stylesheet";
-//   newLink.href = "css/mobile.css";
-//   document.head.appendChild(newLink);
-// }
-
-// function addStylesheet2() {
-//   let newLink2 = document.createElement("link");
-//   newLink2.rel = "stylesheet";
-//   newLink2.href = "css/tablet.css";
-//   document.head.appendChild(newLink2);
-// }
-
-// function addStylesheet3() {
-//   let newLink3 = document.createElement("link");
-//   newLink3.rel = "stylesheet";
-//   newLink3.href = "css/desktop.css";
-//   document.head.appendChild(newLink3);
-// }
-
-// if (screenWidth < 768) {
-//   addStylesheet1();
-// } else if (screenWidth >= 768 && screenWidth < 1099) {
-//   addStylesheet2();
-// } else {
-//   addStylesheet3();
-// }
-
-// // desabling breakpoints when window is resized
-
-// window.addEventListener("resize", function() {
-//   let newScreenWidth = window.innerWidth;
-//   if (newScreenWidth !== screenWidth) {
-//     // Do nothing
-//   }
-// });
-
-
 const mqDesktops = window.matchMedia("(min-width: 1100px)");
+const mqTablets = window.matchMedia("(min-width: 768px) and (max-width: 1099px)");
+
 
 window.onload = function() {
   if(mqDesktops.matches) {
@@ -73,17 +32,6 @@ window.onload = function() {
     });
 
     // go back btn
-
-    // gsap.registerPlugin(ScrollToPlugin);
-
-    // const btn = document.getElementById('icon-s12');
-
-    // btn.addEventListener('click', goBack);
-
-    // function goBack() {
-    // gsap.to(window, {duration: 3, scrollTo: 200, ease: "power3"});
-    // console.log("clicked");
-    // };
 
     const btn = document.getElementById('icon-s12');
 
@@ -206,5 +154,122 @@ window.onload = function() {
         toggleActions: "play none none pause"
       }
     });
-  }
+  } else if (mqTablets.matches) {
+        //slide 1 black mask animation
+
+        let tl1 = new TimelineMax;
+
+        tl1.to('.mask', 2.8, {y:'-100vh', ease: Power2.easeInOut}, 2.1)
+
+        //main title animation gsap
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        let tl2 = gsap.timeline({delay: 0.5});
+
+        tl2.from('.main-title', {
+            y: 40,
+            opacity: 0,
+            duration: 2,
+            ease: 'power4'
+        })  
+
+        let tl3 = gsap.timeline({delay: 1.2});
+
+        tl3.from('.sub-title', {
+            y: 40,
+            opacity: 0,
+            duration: 2,
+            ease: 'power4'
+        })  
+
+        // go back btn
+
+        gsap.registerPlugin(ScrollToPlugin);
+
+        const btn = document.getElementById('icon-s12-up');
+
+        btn.addEventListener('click', goBack);
+
+        function goBack() {
+        gsap.to(window, {duration: 3, scrollTo: 0, ease: "power3.out"});
+        console.log("clicked");
+        };
+
+      // section-titles animation
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        const titles = gsap.utils.toArray(".section-title");
+
+        titles.forEach((title, i) => {
+          gsap.from(title, {
+            y: 10,
+            opacity: 0,
+            duration: 0.5,
+            ease: "power1",
+            scrollTrigger: {
+              trigger: title.parentElement.parentElement,
+              start: "left center",
+              toggleActions: "play none none pause"
+            }
+          });
+        });
+
+        // paragraph animation
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        const paragraphs = gsap.utils.toArray(".paragraph");
+
+        paragraphs.forEach((para, i) => {
+          gsap.from(para, {
+            y: 5,
+            opacity: 0,
+            duration: 1,
+            ease: "power1",
+            scrollTrigger: {
+              trigger: para.parentElement,
+              start: "left center",
+              toggleActions: "play none none pause"
+            }
+          });
+        });
+
+        // paris animation
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        const paris = new SplitType('#paris');
+    
+        gsap.to('.char', {
+          y: 0,
+          stagger: 0.2,
+          delay: 0.2,
+          duration: .4,
+          ease: "power2",
+          scrollTrigger: {
+            trigger:'.paragraph-s2',
+            start: "left center",
+            toggleActions: "play none none pause"
+          }
+        });
+
+        // slide-5 animation
+
+        gsap.to('.date', {
+          x: 0,
+          stagger: 0.2,
+          delay: 0.1,
+          duration: .2,
+          ease: "power2",
+          scrollTrigger: {
+            trigger:'.slide-5',
+            start: "left center",
+            toggleActions: "play none none pause"
+          }
+        });
+
+
+      }
 }
