@@ -274,14 +274,14 @@ function handleResponsiveDesign() {
 
 // refresh on window resize to prevent js / css responsive bugs 
 
-function handleResize() {
-  if (mqDesktops.matches) {
-    window.location.reload();
-  } else if (mqTablets.matches || mqMobiles.matches) {
-    window.location.reload();
-  }
-};
+// function handleResize() {
+//   if (mqDesktops.matches) {
+//     window.location.reload();
+//   } else if (mqTablets.matches || mqMobiles.matches) {
+//     window.location.reload();
+//   }
+// };
 
 
 window.addEventListener('load', handleResponsiveDesign);
-window.addEventListener('resize', handleResize);
+// window.addEventListener('resize', handleResize);
