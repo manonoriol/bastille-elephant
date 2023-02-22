@@ -1,10 +1,9 @@
 const mqDesktops = window.matchMedia("(min-width: 1100px)");
-const mqTablets = window.matchMedia(
-  "(min-width: 768px) and (max-width: 1099px)"
-);
+const mqTablets = window.matchMedia("(min-width: 768px) and (max-width: 1099px)");
 const mqMobiles = window.matchMedia("(max-width: 767px)");
 
-window.onload = function () {
+
+function handleResponsiveDesign() {
   if (mqDesktops.matches) {
     //slide 1 black mask animation
 
@@ -272,3 +271,17 @@ window.onload = function () {
     });
   }
 };
+
+// refresh on window resize to prevent js / css responsive bugs 
+
+function handleResize() {
+  if (mqDesktops.matches) {
+    window.location.reload();
+  } else if (mqTablets.matches || mqMobiles.matches) {
+    window.location.reload();
+  }
+};
+
+
+window.addEventListener('load', handleResponsiveDesign);
+window.addEventListener('resize', handleResize);
